@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: "Open Sans";
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 120px;   
+}
+header .logo img {
+    width: 16em
+}
+header .links ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+header .links ul a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+footer p {
+    font-size: 18px;
+    font-weight: 500;
+}
+footer img {
+    width: 18em
+}
+
+
+.intro {
+    position: relative;
+    background-image: url('images/intro-background.jpg');
+    background-size: cover;
+    /* background-position: center; */
+    height: 70vh;
+}
+.other-pages-intro {
+    height: 30vh;
+    background-position: center;
+}
+.intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a6
+}
+.intro .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+.intro h1 {
+    font-size: 55px;
+}
+.intro h1 b {
+    color: #7f0423
+}
+.intro p {
+    font-size: 19px;
+    margin: 20px 0
+}
+.intro .btns {
+    margin-top: 10px
+}
+.intro .btns button {
+    font-size: 20px;
+    background-color: #7f0423;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 6em;
+    height: 2em;
+    border-radius: 4px;
+}
+.intro .btns a{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px
+}
+
+.about {
+    padding: 6em 0
+}
+.about .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+.about .title h2 {
+    font-size: 35px
+}
+.about .title img {
+    width: 21em
+}
+.about .content {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em
+}
+.about .content img {
+    width: 23em;
+    border: 5px solid #7f0423;
+    border-radius: 8px;
+    margin-right: 1em;
+}
+.about .content p {
+    max-width: 600px;
+    line-height: 1.7em;
+}
+
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.features ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5em
+}
+.features ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.features ul li h4 {
+    font-size: 22px;
+    margin-bottom: 5px
+}
+.features ul li p {
+    max-width: 320px;
+    color: #575757
+}
+
+.features a {
+    margin-top: 2.5em
+}
+.features a button {
+    font-size: 20px;
+    background-color: #7f0423;
+    color: #FFF;
+    border: none;
+    outline: none;
+    width: 6em;
+    height: 1.8em;
+    border-radius: 4px;
+}
+
+
+.contact {
+    position: relative;
+    background-image: url('images/home-contact-image.jpg');
+    background-size: cover;
+    height: 40vh;
+    margin: 6em 0
+}
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #7f0423;
+}
+.contact .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+.contact h2 {
+    font-size: 2.8em;
+    text-align: center;
+    color: #fff;
+}
+.contact a button {
+    font-size: 20px;
+    background-color: #FFF;
+    color: #4c0013;
+    border: none;
+    outline: none;
+    width: 6em;
+    height: 1.8em;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+
+
+
+.contact-us {
+    padding: 5em 8em;
+    display: flex;
+    justify-content: space-around;
+}
+.contact-us .form {
+    width: 45%;
+}
+.contact-us .form .title h2 {
+    font-size: 32px;
+}
+
+.contact-us .form form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.contact-us .form form input {
+    height: 2.8em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #505050;
+    margin-bottom: 22px;
+    font-size: 17px;
+    background: transparent;
+    color: #fff;
+}
+.contact-us .form form [placeholder="Your Message"] {
+    height: 8em
+}
+.contact-us .form form [type="submit"] {
+    font-size: 18px;
+    background-color: #7f0423;
+    color: #FFF;
+    border: none;
+    outline: none;
+    width: 10em;
+    height: 1.8em;
+    border-radius: 4px;
+}
+
+.contact-us .socials {
+    background-color: #7f0423;
+    color: #FFF;
+    width: 30%;
+    padding: 10px 15px;
+    position: relative;
+}
+.contact-us .socials h2 {
+    font-size: 30px;
+    margin-bottom: 5px
+}
+.contact-us .socials ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 0.6em
+}
+.contact-us .socials ul img {
+    width: 32px;
+}
+.contact-us .socials .customer-service-img {
+    width: 27em;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border: 5px solid #7f0423;
+}
+
+
+
+.login-signup {
+    position: relative;
+    height: 80vh;
+}
+.login-signup .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    height: 50vh;
+    width: 50%;
+    border: 4px solid #7f0423;
+}
+.login-signup .left {
+    position: relative;
+    background: linear-gradient(180deg, #7f0423, #86112e);
+    width: 50%
+}
+.login-signup .left .left-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+}
+.login-signup .left .left-content img {
+    width: 10em
+}
+
+.login-signup .right {
+    width: 50%;
+    padding: 2em;
+}
+.login-signup .right h2 {
+    font-size: 33px;
+}
+.login-signup .right form {
+    margin-top: 1em
+}
+.login-signup .right form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+.login-signup .right form div label {
+    
+}
+.login-signup .right form div input {
+    height: 2.4em;
+}
+.login-signup .right form p {
+
+}
+.login-signup .right form p a {
+    color: #7f0423
+}
+.login-signup .right form [type="submit"] {
+    font-size: 18px;
+    background-color: #7f0423;
+    color: #FFF;
+    border: none;
+    outline: none;
+    width: 10em;
+    height: 1.8em;
+    border-radius: 4px;
+    margin-top: 1em
+}
+
+
+
+
+.costume {
+    padding: 5em 7em
+}
+.costume .title {
+
+}
+.costume .title h2 {
+    font-size: 35px;
+}
+.costume .title p {
+    font-size: 20px
+}
+
+.costume .user-data {
+    margin-top: 20px
+}
+.costume .user-data .user-information {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding-bottom: 4em;
+}
+.costume .user-data .user-information div {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+}
+.costume .user-data .user-information div input,
+.costume .user-data .user-information div select {
+    width: 12em;
+    height: 2.5em;
+    padding-left: 5px;
+    border: 2px solid #7f0423;
+    outline: none;
+}
+.costume .user-data .user-information button {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #7f0423;
+    color: #FFF;
+    border: none;
+    outline: none;
+    width: 6em;
+    height: 1.8em;
+    border-radius: 4px;  
+}
+.costume .user-data .user-information .photo .camera {
+    background-color: #7f04232b;
+    width: 14em;
+    height: 17em;
+    position: relative;
+    border-radius: 6px;
+    margin-top: 7px;
+}
+.costume .user-data .user-information .photo .camera img {
+    width: 7em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.costume .user-data .result {
+    display: none;
+    padding-top: 4em
+}
+.costume .user-data .result img {
+    width: 20em
+}

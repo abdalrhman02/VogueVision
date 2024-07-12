@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VogueVision</title>
+        <link rel="stylesheet" href="s.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo.jpeg" />
+            </div>
+
+            <div class="links">
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="reco.html"><li>Recommendations</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                    <a href="login.html"><li>Login</li></a>
+                </ul>
+            </div>
+        </header>
+
+        <div class="costume">
+            <div class="title">
+                <h2>Fill your information</h2>
+                <p>this infromation help us to find the best costume for you!</p>
+            </div>
+
+            <div class="user-data">
+                <div class="user-information">
+                    <div>
+                        <label for="gender">Whats your gender?</label>
+                        <select id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="gender">How old are you?</label>
+                        <select id="gender">
+                            <option value="kid">8-16</option>
+                            <option value="teenager">17-22</option>
+                            <option value="adult">23-40</option>
+                            <option value="old">40+</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="height">Your Height?</label>
+                        <select id="gender">
+                            <option value="">Below 140 cm</option>
+                            <option value="">140 - 150 cm</option>
+                            <option value="">151 - 160 cm</option>
+                            <option value="">161 - 170 cm</option>
+                            <option value="">171 - 180 cm</option>
+                            <option value="">181 - 190 cm</option>
+                            <option value="">Above 190 cm</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="weight">Your Weight?</label>
+                        <select id="gender">
+                            <option value="">Below 40 kg</option>
+                            <option value="">40 - 50 kg</option>
+                            <option value="">51 - 60 kg</option>
+                            <option value="">61 - 70 kg</option>
+                            <option value="">71 - 80 kg</option>
+                            <option value="">81 - 90 kg</option>
+                            <option value="">91 - 100 kg</option>
+                            <option value="">Above 100 kg</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="skinColor">Your Skin Color?</label>
+                        <select id="skinColor" name="skinColor">
+                            <option value="fair">Fair</option>
+                            <option value="light">Light</option>
+                            <option value="medium">Medium</option>
+                            <option value="tan">Tan</option>
+                            <option value="deep">Deep</option>
+                          </select>
+                    </div>
+
+                    <div>
+                        <label for="hairColor">Your Hair Color?</label>
+                        <select id="hairColor" name="hairColor">
+                          <option value="black">Black</option>
+                          <option value="brown">Brown</option>
+                          <option value="blonde">Blonde</option>
+                          <option value="red">Red</option>
+                          <option value="gray">Gray</option>
+                        </select>
+                      
+                    </div>
+
+                    <div class="photo">
+                        <h3>Add your photo:</h3>
+                        <div class="camera">
+                            <img src="images/camera.png" />
+                        </div>
+                    </div>
+
+                    <button id="submitBtn">Done</button>
+                </div>
+
+                <hr>
+
+                <div class="result" id="result">
+                    <img src="images/t-shirt.png" />
+                    <img src="images/jeans.png" />
+                    <img src="images/shoes.png" />
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>All Rights Reserved To</p>
+            <img src="images/logo.jpeg">
+        </footer>
+    </body>
+
+    <script>
+        let submitBtn = document.getElementById("submitBtn");
+        let resultDiv = document.getElementById("result");
+
+        submitBtn.onclick = () => {
+            result.style.display = "block"
+        };
+    </script>
+</html>
