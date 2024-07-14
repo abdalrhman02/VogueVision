@@ -113,9 +113,33 @@
                 <hr>
 
                 <div class="result" id="result">
-                    <img src="images/t-shirt.png" />
-                    <img src="images/jeans.png" />
-                    <img src="images/shoes.png" />
+                    <div class="images">
+                        <img src="images/t-shirt.png" />
+                        <img src="images/jeans.png" />
+                        <img src="images/shoes.png" />
+                    </div>
+
+                    <div class="credit">
+                        <div>
+                            <label for="username">Your Name:</label>
+                            <input type="text" id="username" />
+                        </div>
+
+                        <div>
+                            <label for="visa">Enter your credit card number:</label>
+                            <input type="number" id="visa" />
+                        </div>
+
+                        <input type="submit" id="submit-buy" class="btn" value="Purchase" />
+                    </div>
+
+                    <div class="purchase-done" id="purchase-done">
+                        <div class="cont">
+                            <h1>Thank You!</h1>
+                            <p>You have successfully purchased these items!</p>
+                        </div>
+                        <img src="images/close.png" id="purchase-close" class="purchase-close">
+                    </div>
                 </div>
             </div>
         </div>
@@ -129,9 +153,20 @@
     <script>
         let submitBtn = document.getElementById("submitBtn");
         let resultDiv = document.getElementById("result");
-
         submitBtn.onclick = () => {
             result.style.display = "block"
         };
+
+
+        let buyBtn = document.getElementById("submit-buy");
+        let buyWindow = document.getElementById("purchase-done");
+        let buyWindowX = document.getElementById("purchase-close");
+
+        buyBtn.onclick = () => {
+            buyWindow.style.display = "block"
+        }
+        buyWindowX.onclick = () => { 
+            buyWindow.style.display = "none"
+        }
     </script>
 </html>
